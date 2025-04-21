@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fgh.www.mapper.OrdersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fgh.www.pojo.Orders">
+        <id column="id" property="id" />
+        <result column="product_name" property="productName" />
+        <result column="order_no" property="orderNo" />
+        <result column="user_id" property="userId" />
+        <result column="amount_paid" property="amountPaid" />
+        <result column="status" property="status" />
+        <result column="alipayTraceNo" property="alipayTraceNo" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+</mapper>

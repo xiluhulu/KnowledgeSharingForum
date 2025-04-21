@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_knowledge_sharing_forum_two?serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  data:
+    redis:
+      port: 6379
+      host: localhost
+      database: 0
+      password:
+mybatis-plus:
+#  global-config:
+#    db-config:
+#      logic-delete-field: deleted
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    type-aliases-package: com.fgh.www.pojo
+    mapper-locations: classpath:mapper/*.xml
+    map-underscore-to-camel-case: true
+server:
+  port: 9999
+alipay:
+  appId: 
+  appPrivateKey: 
+  alipayPublicKey: 
+  notifyUrl: 
+  gatewayUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+
+

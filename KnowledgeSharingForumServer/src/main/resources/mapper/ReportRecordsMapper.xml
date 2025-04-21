@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fgh.www.mapper.ReportRecordsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fgh.www.pojo.ReportRecords">
+        <id column="id" property="id" />
+        <result column="reporter_user_id" property="reporterUserId" />
+        <result column="report_reason" property="reportReason" />
+        <result column="reported_type" property="reportedType" />
+        <result column="reported_article_id" property="reportedArticleId" />
+        <result column="reported_comment" property="reportedComment" />
+        <result column="reported_time" property="reportedTime" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="audit_comment" property="auditComment" />
+        <result column="audit_time" property="auditTime" />
+        <result column="auditor_user_id" property="auditorUserId" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+</mapper>
